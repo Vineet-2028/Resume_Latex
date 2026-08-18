@@ -1,0 +1,197 @@
+%-------------------------
+% Resume in LaTeX
+% Tailored for Diploma in Computer Science & Engineering
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+\usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins tightly for single-page fit
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.8in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape NISHANT CHAUHAN} \\ \vspace{3pt}
+    \small Etah, Uttar Pradesh, India 207122 \\ \vspace{4pt}
+    \color{Blue}
+    \faPhone\ \href{tel:+919266829247}{+91 9266829247} ~ 
+    \faEnvelope\ \href{mailto:nishantnishant34201@gmail.com}{nishantnishant34201@gmail.com} ~ 
+    \faLinkedin\ \href{https://www.linkedin.com/in/vineet-chauhan-8a79ab37b/}{LinkedIn} ~
+    \faGithub\ \href{https://github.com/Vineet-2028}{GitHub}
+\end{center}
+\vspace{-12pt}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sunder Deep Group of Institutions, Ghaziabad}{Aug. 2024 -- Aug. 2027}
+      {Diploma in Computer Science and Engineering}{\textbf{CGPA:} 6.9 / 10}
+  \resumeSubHeadingListEnd
+  \vspace{-6pt}
+  \begin{itemize}[leftmargin=0.10in, label={}]
+    \item \small{\textbf{Relevant Coursework:} Data Structures \& Algorithms, Object-Oriented Programming (OOPs), Computer Organization \& Architecture, Operating Systems, Database Management Systems (DBMS), Applied Mathematics}
+  \end{itemize}
+\vspace{-10pt}
+
+%-----------TECHNICAL SKILLS-----------------
+\section{TECHNICAL SKILLS}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages:} Python, SQL, Java, JavaScript, C \\
+    \textbf{Data Analysis \& ML:} Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn \\
+    \textbf{Data Visualization:} Tableau, Power BI \\
+    \textbf{Databases:} MongoDB, MySQL, SQL Server \\
+    \textbf{Web Development:} React.js, Tailwind CSS, Node.js, Express.js, RESTful APIs, JWT Auth \\
+    \textbf{Tools \& Platforms:} Git, GitHub, Jupyter Notebook, Google Colab, VS Code, Postman \\
+    \textbf{Core Concepts:} Data Cleaning, Exploratory Data Analysis (EDA), Feature Engineering, SQL Querying, Data Wrangling
+  }}
+\end{itemize}
+\vspace{-10pt}
+
+%-----------PROJECTS-----------
+\section{DATA ANALYTICS \& DATA SCIENCE PROJECTS}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Data Science Experiments Repository} $|$ \emph{Python, Pandas, NumPy, Scikit-Learn}}{\href{https://github.com/Vineet-2028/Data_Science}{\color{Blue} GitHub Repository \footnotesize \faExternalLink*}}
+    \resumeItemListStart
+      \resumeItem{Developed a structured GitHub repository showcasing core concepts in data cleaning, exploratory data analysis (EDA), and machine learning.}
+      \resumeItem{Implemented workflows for data preprocessing, feature engineering, model training, and performance evaluation.}
+      \resumeItem{Organized exploratory notebooks covering regression, classification algorithms, and visual analysis.}
+    \resumeItemListEnd
+    \vspace{-10pt}
+
+  \resumeProjectHeading
+    {\textbf{Interactive Data Dashboard} $|$ \emph{Tableau, Power BI}}{\href{https://public.tableau.com/app/profile/vineet.chauhan5884/vizzes}{\color{Blue} View Dashboard \footnotesize \faExternalLink*}}
+    \resumeItemListStart
+      \resumeItem{Built interactive visual dashboards to analyze key dataset trends, performance metrics, and summary statistics.}
+      \resumeItem{Integrated dynamic filters and custom chart visualizations to enable seamless data exploration.}
+    \resumeItemListEnd
+    \vspace{-10pt}
+
+  \resumeProjectHeading
+    {\textbf{SQL Data Analysis Practice} $|$ \emph{MySQL, SQL Server}}{\href{https://github.com/Vineet-2028/SQL}{\color{Blue} GitHub Repository \footnotesize \faExternalLink*}}
+    \resumeItemListStart
+      \resumeItem{Solved complex analytical data problems using SQL joins, aggregations, window functions, and nested subqueries.}
+      \resumeItem{Executed trend analysis and systematic data auditing techniques on structured tabular datasets.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+
+\section{SOFTWARE PROJECTS}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Smart AI-Based Internship Recommendation Engine} $|$ \emph{Node.js, Express.js, MongoDB, React}}{\href{https://github.com/Satish-011/Smart-Resource-Management-System}{\color{Blue} GitHub Repository \footnotesize \faExternalLink*}}
+    \resumeItemListStart
+      \resumeItem{Developed for \textbf{Smart India Hackathon 2025}: "AI-Based Internship Recommendation Engine for PM Internship Scheme."}
+      \resumeItem{Engineered the \textbf{Express.js backend}, designing RESTful API endpoints and integrating MongoDB for high-performance data storage.}
+      \resumeItem{Built core modules for resource allocation and scheduling, focusing on backend scalability and resource tracking.}
+      \resumeItem{Designed and enforced Git protocols, facilitating seamless collaboration and reducing merge-related errors by over 50 percentage within the development team.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+
+
+%-----------ACHIEVEMENTS & HACKATHONS-----------
+\section{ACHIEVEMENTS \& HACKATHONS}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{Participant -- Smart India Hackathon (SIH 2025)}}{2025}
+    \resumeItemListStart
+      \resumeItem{Spearheaded the development of an AI-driven recommendation engine, addressing critical real-world problem statements under national guidelines to improve system efficiency by 15 percentage.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------POSITIONS OF RESPONSIBILITY---------------
+\section{POSITIONS OF RESPONSIBILITY}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \item \textbf{Core Member, Fresher's Party Organizing Committee} \hfill \textit{College Event Management}
+  \begin{itemize}[leftmargin=0.15in, topsep=2pt]
+    \resumeItem{Orchestrated a fresher event for 600+ attendees, coordinating across three departments to ensure smooth operational execution.}
+  \end{itemize}
+\end{itemize}
+
+\end{document}
