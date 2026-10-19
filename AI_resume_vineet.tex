@@ -1,0 +1,152 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{charter}
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\baselinestretch}{1.02}
+
+% ---------- Page geometry ----------
+\addtolength{\oddsidemargin}{-0.60in}
+\addtolength{\evensidemargin}{-0.60in}
+\addtolength{\textwidth}{1.20in}
+\addtolength{\topmargin}{-0.64in}
+\addtolength{\textheight}{1.22in}
+
+% ---------- Visual system ----------
+\definecolor{Accent}{HTML}{173F5F}
+\definecolor{Muted}{HTML}{555555}
+
+\titleformat{\section}
+  {\vspace{-1pt}\large\bfseries\color{Accent}}
+  {}{0em}{}
+  [\color{black!30}\titlerule\vspace{-3pt}]
+\titlespacing*{\section}{0pt}{8pt}{6pt}
+
+\newcommand{\resumeItem}[1]{\item \small\justifying #1}
+\newcommand{\resumeItemListStart}{%
+  \begin{itemize}[
+    leftmargin=0.20in,
+    label=\raisebox{0.20ex}{\tiny$\bullet$},
+    itemsep=2.5pt,
+    topsep=3pt,
+    parsep=0pt,
+    partopsep=0pt
+  ]
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+\newcommand{\projectHeading}[3]{%
+  \par\noindent\textbf{\large #1}\hfill\textit{\small #2}\\[-1pt]
+  {\small\color{Muted}\textit{#3}}\par\vspace{2pt}
+}
+
+\begin{document}
+
+% =========================================================
+% HEADER
+% =========================================================
+\begin{center}
+    {\Huge\bfseries VINEET CHAUHAN}\\[3pt]
+    {\normalsize\bfseries\color{Accent} AI/ML ENGINEER \;|\; COMPUTER VISION \;|\; ML SYSTEMS}\\[5pt]
+    \small
+    Etah, Uttar Pradesh, India
+    \;|\;
+    \href{tel:+917993525733}{+91 7993525733}
+    \;|\;
+    \href{mailto:vineet.240101252@iiitbh.ac.in}{vineet.240101252@iiitbh.ac.in}\\[2pt]
+    \href{https://www.linkedin.com/in/vineet-chauhan-8a79ab37b/}{LinkedIn}
+    \;|\;
+    \href{https://github.com/Vineet-2028}{GitHub}
+\end{center}
+\vspace{-6pt}
+
+% =========================================================
+% PROFILE
+% =========================================================
+\section{PROFILE}
+\small\justifying
+B.Tech Computer Science student at IIIT Bhagalpur focused on building \textbf{real AI systems from data and experiments to reliable inference}. My strongest work spans \textbf{real-time computer vision} and \textbf{large-scale entity resolution}, including detector benchmarking, temporal perception pipelines, depth/geometry integration, blocking and retrieval, feature engineering, model validation, and reproducible testing.
+\vspace{-2pt}
+
+% =========================================================
+% EDUCATION
+% =========================================================
+\section{EDUCATION}
+\textbf{Indian Institute of Information Technology Bhagalpur}\hfill\textbf{Aug 2024 -- Jul 2028}\\[1pt]
+\textit{Bachelor of Technology in Computer Science and Engineering}\hfill\textbf{CGPA: 8.32/10}\\[2pt]
+\small\textbf{Relevant Coursework:} Data Structures \& Algorithms, OOP, Operating Systems, DBMS, Computer Organization \& Architecture, Probability \& Statistics
+\vspace{-2pt}
+
+% =========================================================
+% SKILLS
+% =========================================================
+\section{TECHNICAL SKILLS}
+\small
+\textbf{Programming:} Python, Java, SQL, JavaScript, C\\[2pt]
+\textbf{AI/ML:} PyTorch, Scikit-learn, LightGBM, OpenCV, ONNX, NumPy, Pandas, Polars, CNNs, Transformers\\[2pt]
+\textbf{ML Systems:} Object Detection, Depth Estimation, Temporal/Sensor Processing, Feature Engineering, Entity Resolution, Model Evaluation, Inference Pipelines\\[2pt]
+\textbf{Backend \& Engineering:} Spring Boot, REST APIs, Node.js, Express.js, MongoDB, MySQL, Git, GitHub, CI/CD, Automated Testing
+\vspace{-2pt}
+
+% =========================================================
+% FLAGSHIP PROJECTS
+% =========================================================
+\section{FLAGSHIP AI / ML PROJECTS}
+
+\projectHeading
+  {VISION -- Real-Time Assistive Perception System\hspace{5pt}\href{https://github.com/Vineet-2028/VISION}{\raisebox{0.15ex}{\footnotesize\faGithub}}}
+  {Ongoing Research Prototype}
+  {Python, Java, Computer Vision, ONNX, PyAV, Spring Boot}
+\resumeItemListStart
+  \resumeItem{Building a real-time assistive perception system for blind and visually impaired users that prioritizes nearby \textbf{pedestrians, vehicles, obstacles, motion, and depth} while suppressing low-value scene information.}
+  \resumeItem{Implemented deterministic variable-frame-rate replay, timestamp-safe bounded sensor buffers, IMU/motion primitives, and Java--Python geometry integration so perception experiments remain reproducible under irregular or late sensor data.}
+  \resumeItem{Evaluated \textbf{YOLO26n/YOLO26s, YOLO11n, and RT-DETRv2-R18} across \textbf{40 detector benchmark runs}, including native/ONNX checks and fixed-precision / false-positive operating-point analysis.}
+  \resumeItem{Integrated explicit depth contracts, object--depth association, camera/range geometry, timestamp-aligned transforms, compact recording, and failure-handling checks; the current prototype stack passes \textbf{444 automated tests}.}
+\resumeItemListEnd
+\vspace{6pt}
+
+\projectHeading
+  {Large-Scale Entity Resolution Pipeline\hspace{5pt}\href{https://github.com/Vineet-2028/Entity}{\raisebox{0.15ex}{\footnotesize\faGithub}}}
+  {ML Systems / Competition Research}
+  {Python, Polars, LightGBM, Blocking, Feature Engineering}
+\resumeItemListStart
+  \resumeItem{Built schema-driven normalization for \textbf{12.5M+ noisy business records}, generating canonical name/address views, ASCII forms, token sets, character n-grams, digit features, postal fields, and structural attributes in chunked Parquet outputs.}
+  \resumeItem{Designed and executed multi-key blocking for \textbf{2,206,821 source entities}, generating \textbf{618,743,166 candidate pairs} across two target sources while applying candidate caps and rare-token constraints for scalable retrieval.}
+  \resumeItem{Audited candidate generation against ground truth: \textbf{88.14\% pair recall} on source2 and \textbf{87.08\%} on source3, with \textbf{>99.7\% entity coverage} in both candidate sets.}
+  \resumeItem{Trained a \textbf{72-feature LightGBM matcher} and performed entity-level F0.5 validation and error analysis, identifying candidate-recall limitations and local-to-test distribution shift as key generalization bottlenecks.}
+\resumeItemListEnd
+
+% =========================================================
+% ACHIEVEMENTS
+% =========================================================
+\section{ACHIEVEMENTS}
+\small\justifying
+\textbf{Codeforces:} Max Rating 969; ranked \textbf{1,060 / 28,555 (top 4\%)} in Round 1056 (Div. 4). \quad
+\textbf{CodeChef:} 2-Star, Max Rating 1485; ranked \textbf{468 / 5,000 (top 9.2\%)} in Starters 207.\\[2pt]
+\textbf{LeetCode:} Max Rating 1480; \textbf{200+ problems solved} across core data structures and algorithms.
+\vspace{-2pt}
+
+% =========================================================
+% LEADERSHIP
+% =========================================================
+\section{LEADERSHIP}
+\small\justifying
+\textbf{Core Member, Fresher's Party Organizing Committee -- IIIT Bhagalpur} \hfill \textit{College Event Management}\\[2pt]
+Coordinated cross-team planning and on-ground execution for a fresher's event serving \textbf{600+ attendees}, working across three organizing functions to manage logistics and event delivery.
+
+\end{document}
